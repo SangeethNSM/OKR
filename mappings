@@ -1,0 +1,69 @@
+  function mappings (condition, programName, alwaysApplicableIndicator) {
+   switch(programName){
+   case 'Conventional Standard':{
+    condition['Conv. Std?'] = 'Y';
+    condition['Conv Standard Always'] = alwaysApplicableIndicator;
+   break;
+   }
+   case 'Manual HARP':{
+    condition['Manual HARP?'] = 'Y';
+    condition['Manual HARP Always'] = alwaysApplicableIndicator;
+   break;
+   }
+   case 'AUS HARP':{
+    condition['AUS HARP?'] = 'Y';
+    condition['AUS HARP Always'] = alwaysApplicableIndicator;
+   break;
+   }
+   case 'FHA Standard (AUS)':{
+    condition['FHA Standard (AUS)'] = 'Y';
+    condition['FHA Standard (AUS) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'FHA Streamline (CQ)':{
+    condition['FHA Strmline (CQ)?'] = 'Y';
+    condition['FHA Streamline (CQ) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'FHA Streamline (NCQ)':{
+    condition['FHA Strmline (NCQ)?'] = 'Y';
+    condition['FHA Streamline (NCQ) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'VA Full Doc (AUS)':{
+    condition['VA Full Doc (AUS)'] = 'Y';
+    condition['VA Full Doc (AUS) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'VA IRRRL (NCQ)':{
+    condition['VA IRRRL (NCQ)?'] = 'Y';
+    condition['VA IRRRL (NCQ) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'VA IRRRL (CQ)':{
+    condition['VA IRRRL (CQ)?'] = 'Y';
+    condition['VA IRRRL (CQ) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'FHA Standard (Manual)':{
+    condition['FHA Standard (Manual)'] = 'Y';
+    condition['FHA Manual Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'VA Full Doc (Manual)':{
+    condition['VA Manual'] = 'Y';
+    condition['VA Full Doc (Manual) Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   case 'Non Delegated Jumbo':{
+    condition['Non Delegated Jumbo'] = 'Y';
+    condition['Non Delegated Jumbo Always'] = alwaysApplicableIndicator;
+    break;
+   }
+   default:
+   break;
+   }
+   return condition;
+};
+
+  module.exports = mappings;

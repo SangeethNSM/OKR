@@ -1,0 +1,22 @@
+{
+  "name": "database_validation",
+  "version": "1.0.0",
+  "description": "tool to validate database update in QA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressvalidator"
+  ],
+  "author": "sangeeth kumar",
+  "license": "ISC",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "json2xls": "^0.1.2",
+    "mssql": "^4.1.0",
+    "utf8": "^2.1.2"
+  }
+}
